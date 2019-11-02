@@ -87,7 +87,7 @@ endif
 			<button class="btn btn-lg btn-primary mb-3 btn-block" type="submit" name="btn-entrar">Login</button>
 			<a href="cadastro.php">Fazer cadastro</a><br>
 			<a href="senha.php">Esqueci a senha</a>
-			<p class="mt-5 mb-3 text-muted">© by Igor Soares - v2 - 2019-2020</p>
+			<p class="mt-5 mb-3 text-muted">© by Igor Soares - v3 - 2019-2020</p>
 		</form>
 		<?php
 		if(isset($_SESSION['alert_tipo'])):
