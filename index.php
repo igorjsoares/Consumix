@@ -20,7 +20,7 @@ if(isset($_POST['btn-entrar'])):
 
 	$usuario->setEmail($_POST['email']);
 	$usuario->setSenha($_POST['senha']);
-	
+
 	$resultado = $usuariosDao->logar($usuario);
 
 
@@ -34,7 +34,7 @@ if(isset($_POST['btn-entrar'])):
 		unset($_SESSION['alert_tipo']);
 
 		header('Location: painel/index.php');
-		
+
 	else:
 		$_SESSION['painellogado'] = false;
 		$_SESSION['alert_menssagem'] = "Não foi possível realizar o login, confira o usuário e senha.";
@@ -61,7 +61,7 @@ endif
 	<link href="bootstrap_files/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Para os simbolos utilizados no Materialize -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Estilos customizados para esse template -->
 	<link href="bootstrap_files/signin.css" rel="stylesheet">
@@ -87,10 +87,10 @@ endif
 			<button class="btn btn-lg btn-primary mb-3 btn-block" type="submit" name="btn-entrar">Login</button>
 			<a href="cadastro.php">Fazer cadastro</a><br>
 			<a href="senha.php">Esqueci a senha</a>
-			<p class="mt-5 mb-3 text-muted">© by Igor Soares - 2019-2020</p>
+			<p class="mt-5 mb-3 text-muted">© by Igor Soares - v1 - 2019-2020</p>
 		</form>
 		<?php
-		if(isset($_SESSION['alert_tipo'])): 
+		if(isset($_SESSION['alert_tipo'])):
 			?>
 			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -98,7 +98,7 @@ endif
 			</div>
 			<?php
       		//unset($_SESSION['alert_tipo']);
-		endif; 
+		endif;
 		?>
 
 		<!-- jQuery 3 -->
