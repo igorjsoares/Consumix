@@ -1,2 +1,2 @@
 <?php
-echo "index3";
+echo "index3 atualizando";
