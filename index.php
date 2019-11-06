@@ -1,6 +1,5 @@
 <?php
-echo "olá mundo";
-/*
+
 //echo "index";
 require_once 'vendor/autoload.php';
 
