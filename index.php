@@ -22,8 +22,9 @@ if(isset($_POST['btn-entrar'])):
 	$usuario->setEmail($_POST['email']);
 	$usuario->setSenha($_POST['senha']);
 
-	$resultado = $usuariosDao->logar($usuario);
-
+    $resultado = $usuariosDao->logar($usuario);
+    
+var_dump($resultado);
 
 	if($resultado != 0 AND $resultado[0]['status'] == '1'):
 
