@@ -68,7 +68,7 @@ include 'head.php';
 				<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 
 					<div class="input-group mb-3">
-						<input type="email" class="form-control" placeholder="Seu email" required="true" autofocus="true">
+						<input type="email" class="form-control" placeholder="Seu email" name="email" required="true" autofocus="true">
 						<div class="input-group-append">
 							<div class="input-group-text">
 								<span class="fas fa-envelope"></span>
@@ -77,7 +77,7 @@ include 'head.php';
 					</div>
 
 					<div class="input-group mb-3">
-						<input type="password" class="form-control" placeholder="Senha">
+						<input type="password" class="form-control" name="senha" placeholder="Senha">
 						<div class="input-group-append">
 							<div class="input-group-text">
 								<span class="fas fa-lock"></span>
