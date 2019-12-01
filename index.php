@@ -116,7 +116,7 @@ include 'head.php';
         
         toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!', {
             timeOut: 3000,
-            closeButton: false,
+            closeButton: true,
             debug: false,
             newestOnTop: false,
             progressBar: false,
