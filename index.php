@@ -127,6 +127,7 @@ include 'head.php';
         "hideDuration": "1000",
         "timeOut": "5000",
         "extendedTimeOut": "1000",
+        "extend": "10",
         "showEasing": "swing",
         "hideEasing": "linear",
         "showMethod": "fadeIn",
