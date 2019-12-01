@@ -62,7 +62,7 @@ include 'head.php';
 
 	<div class="login-box">
 		<div class="login-logo">
-			<a href="../../index2.html"><b>Consu</b>MIX 1</a>
+			<a href="../../index2.html"><b>Consu</b>MIX 2</a>
 		</div>
 		<!-- /.login-logo -->
 		<div class="card">
@@ -115,7 +115,6 @@ include 'head.php';
 		console.log('Teste de console.');
         
         toastr.info('Algo errado com o e-mail ou senha.', 'Ops!!!', {
-            
             positionClass: "toast-top-center",
             preventDuplicates: true,
             showDuration: "300",
