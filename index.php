@@ -57,6 +57,7 @@ endif
 include 'head.php';
 ?>
 
+
 <body class="hold-transition login-page">
 
 	<div class="login-box">
@@ -130,8 +131,7 @@ include 'head.php';
 	<script src="painel/bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- Bootstrap 3.3.7 -->
 	<script src="painel/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<!-- Toastr -->
-	<script src="plugins/toastr/toastr.js"></script>
+	
 
 	<script type="text/javascript" DEFER="DEFER">
 		//FUNÇAO DE EXECUTA UM ALERT ASSIM QUE A PAGINA E CARREGADA
