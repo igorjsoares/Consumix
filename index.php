@@ -93,12 +93,12 @@ include 'head.php';
 			</form>
 
 			<div style="margin-left: 20px; margin-bottom: 20px;">
-				<p class="mb-12">
+				<div class="mb-12">
 					<a href="cadastro.php">Fazer cadastro</a>
-				</p>
-				<p class="mb-12">
+				</div>
+				<div class="mb-12">
 					<a href="senha.php" class="text-center">Esqueci a senha</a>
-				</p>
+				</div>
 			</div>
 
 		</div>
