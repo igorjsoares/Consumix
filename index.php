@@ -53,7 +53,7 @@ endif
 <html lang="pt-br">
 
 <?php
-include head.php;
+include 'head.php';
 ?>
 
 	<body class="text-center" cz-shortcut-listen="true">
