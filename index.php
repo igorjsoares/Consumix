@@ -100,7 +100,7 @@ include 'head.php';
 					<a href="senha.php" class="text-center">Esqueci a senha</a>
 				</p>
 			</div>
-			<!-- <p class="mt-5 mb-3 text-muted">© by Igor Soares - v3 - 2019-2020</p> -->
+			<p class="mt-12 mb-12 text-muted">© by Igor Soares - v3 - 2019-2020</p>
 
 		</div>
 		<!-- /.login-card-body -->
