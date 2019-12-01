@@ -114,26 +114,7 @@ include 'head.php';
         
 		console.log('Teste de console.');
         
-
-        toastr.options = {
-        "closeButton": true,
-        "debug": false,
-        "newestOnTop": false,
-        "progressBar": false,
-        "positionClass": "toast-top-right",
-        "preventDuplicates": false,
-        "onclick": null,
-        "showDuration": "300",
-        "hideDuration": "1000",
-        "timeOut": "5000",
-        "extendedTimeOut": "1000",
-        "showEasing": "swing",
-        "hideEasing": "linear",
-        "showMethod": "fadeIn",
-        "hideMethod": "fadeOut"
-        }
-
-        toastr["success"]("Testando Toastr", "Teste")
+        toastr.warning('My name is Inigo Montoya. You killed my father, prepare to die!')
 	</script>
 	<!--
 			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
