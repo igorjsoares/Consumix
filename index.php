@@ -137,6 +137,7 @@ include 'head.php';
 	<script type="text/javascript" DEFER="DEFER">
 		//FUNÇAO DE EXECUTA UM ALERT ASSIM QUE A PAGINA E CARREGADA
 function posCarregamento() {
+toastr.warning('My name is Inigo Montoya. You killed my father, prepare to die!')
 	$(".alert").fadeTo(1, 1).removeClass('hidden');
 	window.setTimeout(function() {
 		$(".alert").fadeTo(500, 0).slideUp(500, function(){
