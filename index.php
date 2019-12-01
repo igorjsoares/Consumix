@@ -110,7 +110,10 @@ include 'head.php';
 	<?php
 		if(isset($_SESSION['alert_tipo'])):
 			?>
-	<!--
+            <script type="text/javascript">
+                console.log('Teste de console.');
+            </script>
+	        <!--
 			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<strong><?=$_SESSION['alert_titulo']?></strong> - <?=$_SESSION['alert_menssagem'];?>
