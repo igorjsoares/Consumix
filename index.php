@@ -110,6 +110,7 @@ include 'head.php';
 		if(isset($_SESSION['alert_tipo'])):
 			?>
 	<script type="text/javascript">
+        toastr.info('Are you the 6 fingered man?')
 		console.log('Teste de console.');
         Toast.fire({
             type: 'error',
