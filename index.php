@@ -121,7 +121,7 @@ include 'head.php';
             newestOnTop: false,
             progressBar: false,
             positionClass: "toast-top-center",
-            preventDuplicates: false,
+            preventDuplicates: true,
             onclick: null,
             showDuration: "300",
             hideDuration: "1000",
