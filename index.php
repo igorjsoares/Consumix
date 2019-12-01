@@ -110,12 +110,26 @@ include 'head.php';
 		if(isset($_SESSION['alert_tipo'])):
 			?>
 	<script type="text/javascript">
-        toastr.info('Are you the 6 fingered man?')
+        
 		console.log('Teste de console.');
-        Toast.fire({
-            type: 'error',
-            title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-        })
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+        toastr["success"]("Testando Toastr", "Teste")
 	</script>
 	<!--
 			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
