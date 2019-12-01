@@ -112,24 +112,16 @@ include 'head.php';
 	<script type="text/javascript">
         
 		console.log('Teste de console.');
-        toastr.options = {
-            "closeButton": true,
-            "debug": false,
-            "newestOnTop": false,
-            "progressBar": false,
-            "positionClass": "toast-top-right",
-            "preventDuplicates": false,
-            "onclick": null,
-            "showDuration": "300",
-            "hideDuration": "1000",
-            "timeOut": "5000",
-            "extendedTimeOut": "1000",
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
-        }
-        toastr["success"]("Testando Toastr", "Teste")
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+            });
+        Toast.fire({
+            type: 'info',
+            title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+        })
 	</script>
 	<!--
 			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
