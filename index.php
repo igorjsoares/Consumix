@@ -109,10 +109,14 @@ include 'head.php';
 	<?php
 		if(isset($_SESSION['alert_tipo'])):
 			?>
-            <script type="text/javascript">
-                console.log('Teste de console.');
-            </script>
-	        <!--
+	<script type="text/javascript">
+		console.log('Teste de console.');
+        Toast.fire({
+            type: 'error',
+            title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+        })
+	</script>
+	<!--
 			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<strong><?=$_SESSION['alert_titulo']?></strong> - <?=$_SESSION['alert_menssagem'];?>
@@ -128,6 +132,8 @@ include 'head.php';
 	<script src="painel/bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- Bootstrap 3.3.7 -->
 	<script src="painel/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- Toastr -->
+	<script src="plugins/toastr/toastr.min.js"></script>
 
 	<script type="text/javascript" DEFER="DEFER">
 		//FUNÇAO DE EXECUTA UM ALERT ASSIM QUE A PAGINA E CARREGADA
