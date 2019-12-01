@@ -112,16 +112,7 @@ include 'head.php';
 	<script type="text/javascript">
         
 		console.log('Teste de console.');
-        const Toast = Swal.mixin({
-            toast: true,
-            position: 'top-end',
-            showConfirmButton: false,
-            timer: 3000
-            });
-        Toast.fire({
-            type: 'info',
-            title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-        })
+        toastr.info('Are you the 6 fingered man?')
 	</script>
 	<!--
 			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
@@ -140,7 +131,7 @@ include 'head.php';
 	<!-- Bootstrap 3.3.7 -->
 	<script src="painel/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- Toastr -->
-	<script src="plugins/toastr/toastr.min.js"></script>
+	<script src="plugins/toastr/toastr.js"></script>
 
 	<script type="text/javascript" DEFER="DEFER">
 		//FUNÇAO DE EXECUTA UM ALERT ASSIM QUE A PAGINA E CARREGADA
