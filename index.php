@@ -19,6 +19,7 @@ if(isset($_GET['tipo']) && $_GET['tipo'] == 'deslogar'){
 //Clicou no botao
 if(isset($_POST['btn-entrar'])):
 var_dump($_POST);
+
 	$usuario->setEmail($_POST['email']);
 	$usuario->setSenha($_POST['senha']);
 
