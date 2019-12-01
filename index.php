@@ -96,7 +96,7 @@ include 'head.php';
 				<div class="mb-12">
 					<a href="cadastro.php">Fazer cadastro</a>
 				</div>
-				<div class="mb-12">
+				<div class="mb-12 text-center">
 					<a href="senha.php" class="text-center">Esqueci a senha</a>
 				</div>
 			</div>
