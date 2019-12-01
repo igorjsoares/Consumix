@@ -35,7 +35,7 @@ var_dump($resultado);
 		$_SESSION['perfil'] = $resultado[0]['perfil'];
 		unset($_SESSION['alert_tipo']);
 
-		header('Location: painel/index.php');
+		//header('Location: painel/index.php');
 
 	else:
 		$_SESSION['painellogado'] = false;
@@ -43,7 +43,7 @@ var_dump($resultado);
 		$_SESSION['alert_titulo'] = "OPS!";
 		$_SESSION['alert_tipo'] = "danger";
 
-		header('Location: index.php');
+		//header('Location: index.php');
 	endif;
 endif
 
@@ -104,8 +104,6 @@ include 'head.php';
 		</div>
 		<!-- /.login-card-body -->
 	</div>
-
-
 
 	<?php
 		if(isset($_SESSION['alert_tipo'])):
