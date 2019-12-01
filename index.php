@@ -115,21 +115,17 @@ include 'head.php';
 		console.log('Teste de console.');
         
         toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!', {
-            timeOut: 3000,
-            closeButton: true,
-            debug: false,
-            newestOnTop: false,
-            progressBar: false,
+            
             positionClass: "toast-top-center",
-            preventDuplicates: false,
-            onclick: null,
+            preventDuplicates: true,
             showDuration: "300",
             hideDuration: "1000",
             extendedTimeOut: "1000",
             showEasing: "swing",
             hideEasing: "linear",
             showMethod: "fadeIn",
-            hideMethod: "fadeOut"
+            hideMethod: "fadeOut",
+            timeOut: 3000
             })
 	</script>
 
