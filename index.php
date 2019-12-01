@@ -114,14 +114,10 @@ include 'head.php';
         
 		console.log('Teste de console.');
         
-        toastr.warning('My name is Inigo Montoya. You killed my father, prepare to die!')
+        // Display an error toast, with a title
+        toastr.error('Algo errado com o e-mail ou senha inseriudos.', 'Ops!!!')
 	</script>
-	<!--
-			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
-				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<strong><?=$_SESSION['alert_titulo']?></strong> - <?=$_SESSION['alert_menssagem'];?>
-			</div>
-            -->
+
 	<?php
         //unset($_SESSION['alert_tipo']);
 		endif;
@@ -139,20 +135,8 @@ include 'head.php';
 	<script src="plugins/toastr/toastr.js"></script>
 
 	<script type="text/javascript" DEFER="DEFER">
-		//FUNÇAO DE EXECUTA UM ALERT ASSIM QUE A PAGINA E CARREGADA
-function posCarregamento() {
-toastr.warning('My name is Inigo Montoya. You killed my father, prepare to die!')
-	$(".alert").fadeTo(1, 1).removeClass('hidden');
-	window.setTimeout(function() {
-		$(".alert").fadeTo(500, 0).slideUp(500, function(){
-			$(".alert").addClass('hidden');
-		});
-	}, 1000);
-
-}
-
-// Chamada da função
-posCarregamento();
+        //FUNÇAO DE EXECUTA UM ALERT ASSIM QUE A PAGINA E CARREGADA
+        
 	</script>
 
 
