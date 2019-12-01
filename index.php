@@ -123,7 +123,7 @@ include 'head.php';
 			</div>
             -->
 	<?php
-      		//unset($_SESSION['alert_tipo']);
+        //unset($_SESSION['alert_tipo']);
 		endif;
 		?>
 	</div>
