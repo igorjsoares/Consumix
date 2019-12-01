@@ -114,7 +114,7 @@ include 'head.php';
         
 		console.log('Teste de console.');
         
-        toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!')
+        toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!', {timeOut: 3000})
 	</script>
 
 	<?php
