@@ -93,14 +93,13 @@ include 'head.php';
 			</form>
 
 			<div style="margin-left: 20px; margin-bottom: 20px;">
-				<p class="mb-1">
+				<p class="mb-12">
 					<a href="cadastro.php">Fazer cadastro</a>
 				</p>
-				<p class="mb-0">
+				<p class="mb-12">
 					<a href="senha.php" class="text-center">Esqueci a senha</a>
 				</p>
 			</div>
-			<p class="mt-12 mb-12 text-muted">© by Igor Soares - v3 - 2019-2020</p>
 
 		</div>
 		<!-- /.login-card-body -->
