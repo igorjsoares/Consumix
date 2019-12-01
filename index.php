@@ -116,8 +116,20 @@ include 'head.php';
         
         toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!', {
             timeOut: 3000,
-            positionClass: 'toast-top-center',
-            showMethod: "fadeIn"
+            closeButton: false,
+            debug: false,
+            newestOnTop: false,
+            progressBar: false,
+            positionClass: "toast-top-center",
+            preventDuplicates: false,
+            onclick: null,
+            showDuration: "300",
+            hideDuration: "1000",
+            extendedTimeOut: "1000",
+            showEasing: "swing",
+            hideEasing: "linear",
+            showMethod: "fadeIn",
+            hideMethod: "fadeOut"
             })
 	</script>
 
