@@ -92,7 +92,7 @@ include 'head.php';
 
 			</div>
 			</form>
-			<div style="padding: 10px;">
+			<div style="padding: 20px;">
 				<p class="mb-1">
 					<a href="cadastro.php">Fazer cadastro</a>
 				</p>
