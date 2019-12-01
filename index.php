@@ -65,7 +65,6 @@ include 'head.php';
 		<!-- /.login-logo -->
 		<div class="card">
 			<div class="card-body login-card-body">
-				<p class="login-box-msg">Entre com e-mail e senha</p>
 				<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 
 					<div class="input-group mb-3">
@@ -92,7 +91,8 @@ include 'head.php';
 
 			</div>
 			</form>
-			<div style="padding: 20px;">
+
+			<div style="margin-left: 20px; margin-botton:20px;">
 				<p class="mb-1">
 					<a href="cadastro.php">Fazer cadastro</a>
 				</p>
