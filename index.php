@@ -114,14 +114,13 @@ include 'head.php';
         
 		console.log('Teste de console.');
         
-        // Display an error toast, with a title
-        toastr.error('Algo errado com o e-mail ou senha inseriudos.', 'Ops!!!')
+        toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!')
 	</script>
 
 	<?php
         //unset($_SESSION['alert_tipo']);
 		endif;
-		?>
+    ?>
 	</div>
 	<!-- /.login-box -->
 
