@@ -60,12 +60,12 @@ include 'head.php';
 
 	<div class="login-box">
 		<div class="login-logo">
-			<a href="../../index2.html"><b>Admin</b>LTE</a>
+			<a href="../../index2.html"><b>Consu</b>MIX</a>
 		</div>
 		<!-- /.login-logo -->
 		<div class="card">
 			<div class="card-body login-card-body">
-				<p class="login-box-msg">Sign in to start your session</p>
+				<p class="login-box-msg">Entre com e-mail e senha</p>
 				<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 
 					<div class="input-group mb-3">
