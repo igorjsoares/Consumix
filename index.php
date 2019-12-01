@@ -39,10 +39,24 @@ if(isset($_POST['btn-entrar'])):
 		//header('Location: painel/index.php');
 
 	else:
-		$_SESSION['painellogado'] = false;
-		$_SESSION['alert_menssagem'] = "Não foi possível realizar o login, confira o usuário e senha.";
-		$_SESSION['alert_titulo'] = "OPS!";
-		$_SESSION['alert_tipo'] = "danger";
+		
+        <script type="text/javascript">
+        
+            console.log('Validou mas não tem acesso.');
+            
+            toastr.error('Não foi possível realizar o login, confira o usuário e senha.', 'Ops!!!', {
+                positionClass: "toast-top-center",
+                preventDuplicates: true,
+                showDuration: "300",
+                hideDuration: "1000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+                timeOut: 3000
+                })
+        </script>
 
 		//header('Location: index.php');
 	endif;
@@ -114,7 +128,7 @@ include 'head.php';
         
 		console.log('Teste de console.');
         
-        toastr.success('Algo errado com o e-mail ou senha.', 'Ops!!!', {
+        toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!', {
             positionClass: "toast-top-center",
             preventDuplicates: true,
             showDuration: "300",
