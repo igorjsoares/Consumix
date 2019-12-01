@@ -50,24 +50,11 @@ endif
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0054)https://getbootstrap.com.br/docs/4.1/examples/sign-in/ -->
-<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="pt-br">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="https://getbootstrap.com.br/favicon.ico">
-
-	<title>Autovip Digital</title>
-
-	<!-- Principal CSS do Bootstrap -->
-	<link href="bootstrap_files/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Para os simbolos utilizados no Materialize -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-	<!-- Estilos customizados para esse template -->
-	<link href="bootstrap_files/signin.css" rel="stylesheet">
-	<script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/tat_popup.js" async=""></script></head>
+<?php
+include head.php;
+?>
 
 	<body class="text-center" cz-shortcut-listen="true">
 
