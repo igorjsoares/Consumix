@@ -113,7 +113,25 @@ include 'head.php';
 	<script type="text/javascript">
         
 		console.log('Teste de console.');
-        toastr.info('Are you the 6 fingered man?')
+        toastr["success"]("Testando Toastr", "Teste")
+
+        toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+        }
 	</script>
 	<!--
 			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
@@ -128,9 +146,9 @@ include 'head.php';
 	</div>
 	<!-- /.login-box -->
 	<!-- jQuery 3 -->
-	<script src="painel/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="plugins/jquery/dist/jquery.min.js"></script>
 	<!-- Bootstrap 3.3.7 -->
-	<script src="painel/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
 	
 
 	<script type="text/javascript" DEFER="DEFER">
