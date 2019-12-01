@@ -56,28 +56,58 @@ endif
 include 'head.php';
 ?>
 
-	<body class="text-center" cz-shortcut-listen="true">
+	<body class="hold-transition login-page">
 
-		<form class="form-signin" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-			<i style="font-size: 5em; color: #b388ff" class="large material-icons">fingerprint</i>
-			<h1 class="h3 mb-3 font-weight-normal text-monospace">AutoVip digital</h1>
-			<label for="inputEmail" class="sr-only">Endereço de email</label>
-			<input type="email" name="email" id="inputEmail" class="form-control" placeholder="Seu email" required="true" autofocus="true">
-			<label for="inputPassword" class="sr-only">Senha</label>
-			<input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha" required="">
-			<div class="">
-				<!--
-				<div class="checkbox mb-3">
-					<label>
-						<input type="checkbox" value="remember-me"> Lembrar de mim
-					</label>
-				</div>
-			-->
-			<button class="btn btn-lg btn-primary mb-3 btn-block" type="submit" name="btn-entrar">Login</button>
-			<a href="cadastro.php">Fazer cadastro</a><br>
-			<a href="senha.php">Esqueci a senha</a>
-			<p class="mt-5 mb-3 text-muted">© by Igor Soares - v3 - 2019-2020</p>
-		</form>
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="../../index2.html"><b>Admin</b>LTE</a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Seu email" required="true" autofocus="true">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Senha">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-block" name="btn-entrar">ENTRAR</button>
+                </div>
+        
+            </div>
+        </form>
+          
+        <p class="mb-1">
+        <a href="cadastro.php">Fazer cadastro</a>
+      </p>
+      <p class="mb-0">
+        <a href="senha.php" class="text-center">Esqueci a senha</a>
+      </p>
+      <!-- <p class="mt-5 mb-3 text-muted">© by Igor Soares - v3 - 2019-2020</p> -->
+
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+           
 		<?php
 		if(isset($_SESSION['alert_tipo'])):
 			?>
