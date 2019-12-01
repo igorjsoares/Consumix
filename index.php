@@ -113,7 +113,7 @@ include 'head.php';
 	<script type="text/javascript">
         
 		console.log('Teste de console.');
-        toastr["success"]("Testando Toastr", "Teste")
+        
 
         toastr.options = {
         "closeButton": true,
@@ -127,12 +127,13 @@ include 'head.php';
         "hideDuration": "1000",
         "timeOut": "5000",
         "extendedTimeOut": "1000",
-        "extend": "10",
         "showEasing": "swing",
         "hideEasing": "linear",
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
         }
+
+        toastr["success"]("Testando Toastr", "Teste")
 	</script>
 	<!--
 			<div class="alert alert-<?=$_SESSION['alert_tipo']?> hidden" role="alert">
