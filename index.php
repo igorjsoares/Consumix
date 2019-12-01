@@ -92,13 +92,14 @@ include 'head.php';
 
 			</div>
 			</form>
-
-			<p class="mb-1">
-				<a href="cadastro.php">Fazer cadastro</a>
-			</p>
-			<p class="mb-0">
-				<a href="senha.php" class="text-center">Esqueci a senha</a>
-			</p>
+			<div style="padding: 10px;">
+				<p class="mb-1">
+					<a href="cadastro.php">Fazer cadastro</a>
+				</p>
+				<p class="mb-0">
+					<a href="senha.php" class="text-center">Esqueci a senha</a>
+				</p>
+			</div>
 			<!-- <p class="mt-5 mb-3 text-muted">© by Igor Soares - v3 - 2019-2020</p> -->
 
 		</div>
