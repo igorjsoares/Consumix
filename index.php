@@ -114,7 +114,11 @@ include 'head.php';
         
 		console.log('Teste de console.');
         
-        toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!', {timeOut: 3000, positionClass: 'toast-top-center'})
+        toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!', {
+            timeOut: 3000,
+            positionClass: 'toast-top-center',
+            showMethod: "fadeIn"
+            })
 	</script>
 
 	<?php
