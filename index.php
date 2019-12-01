@@ -18,14 +18,14 @@ if(isset($_GET['tipo']) && $_GET['tipo'] == 'deslogar'){
 
 //Clicou no botao
 if(isset($_POST['btn-entrar'])):
-var_dump($_POST);
+//var_dump($_POST);
 
 	$usuario->setEmail($_POST['email']);
 	$usuario->setSenha($_POST['senha']);
 
     $resultado = $usuariosDao->logar($usuario);
     
-var_dump($resultado);
+//var_dump($resultado);
 
 	if($resultado != 0 AND $resultado[0]['status'] == '1'):
 
