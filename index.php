@@ -128,10 +128,11 @@ include 'head.php';
 		?>
 	</div>
 	<!-- /.login-box -->
+
 	<!-- jQuery 3 -->
-	<script src="plugins/jquery/dist/jquery.min.js"></script>
+	<script src="plugins/jquery/jquery.min.js"></script>
 	<!-- Bootstrap 3.3.7 -->
-	<script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 	
 
 	<script type="text/javascript" DEFER="DEFER">
