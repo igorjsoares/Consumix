@@ -135,6 +135,8 @@ include 'head.php';
 	<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<!-- AdminLTE App -->
     <script src="dist/js/adminlte.min.js"></script>
+    <!-- Toastr -->
+	<script src="plugins/toastr/toastr.js"></script>
 
 	<script type="text/javascript" DEFER="DEFER">
 		//FUNÇAO DE EXECUTA UM ALERT ASSIM QUE A PAGINA E CARREGADA
