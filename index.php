@@ -62,7 +62,7 @@ include 'head.php';
 
 	<div class="login-box">
 		<div class="login-logo">
-			<a href="../../index2.html"><b>Consu</b>MIX 2</a>
+			<a href="../../index2.html"><b>Consu</b>MIX</a>
 		</div>
 		<!-- /.login-logo -->
 		<div class="card">
