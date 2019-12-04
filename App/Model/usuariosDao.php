@@ -139,6 +139,8 @@ class usuariosDao {
         $stmt->bindValue(':cansaco', $usuarioObj->getCansaco());
         $resultado = $stmt->execute();
 
+        echo $sql;
+
         return $resultado;
 
     }
