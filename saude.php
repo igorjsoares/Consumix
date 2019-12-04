@@ -1,4 +1,5 @@
 <?php
+require_once 'vendor/autoload.php';
 
 $cansaco = $_GET['cansaco'];
 
