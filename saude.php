@@ -3,7 +3,6 @@ require_once 'vendor/autoload.php';
 
 $cansaco = $_GET['cansaco'];
 
-
 $usuario = new \App\Model\Usuario();
 $usuario->setCansaco($cansaco);
 
