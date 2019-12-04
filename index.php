@@ -25,8 +25,8 @@ if(isset($_POST['btn-entrar'])):
 
     $resultado = $usuariosDao->logar($usuario);
     
-//var_dump($resultado);
-
+var_dump($resultado);
+/*
 	if($resultado != 0 AND $resultado[0]['status'] == '1'):
 
 		$_SESSION['painellogado'] = true;
@@ -47,7 +47,7 @@ if(isset($_POST['btn-entrar'])):
 		//header('Location: index.php');
 	endif;
 endif
-
+*/
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0054)https://getbootstrap.com.br/docs/4.1/examples/sign-in/ -->
