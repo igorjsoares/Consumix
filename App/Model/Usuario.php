@@ -3,7 +3,7 @@ namespace App\Model;
 
 class Usuario {
 
-    private $id, $nome, $email, $telefone, $regional, $cpf, $perfil, $status, $senha;
+    private $id, $nome, $email, $telefone, $regional, $cpf, $perfil, $status, $senha, $cansaco;
 
     //tratamento id
     public function getId() {
@@ -83,6 +83,15 @@ class Usuario {
     }
     public function getSenha() {
         return $this->senha;
+    }
+
+    /////PESSOAL, TIRAR MAIS TARDE
+    public function setCansaco($cansaco) {
+        $cansaco = filter_var($cansaco, FILTER_SANITIZE_NUMBER_INT);
+        $this->cansaco = $cansaco;
+    }
+    public function getCansaco() {
+        return $this->cansaco;
     }
 }
 

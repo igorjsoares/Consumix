@@ -131,5 +131,17 @@ class usuariosDao {
         endif;
     }
 
+
+    ////Temporário pessoal
+    public function criarCansaco(Usuario $usuarioObj) {
+        $sql = 'INSERT INTO tbl_pessoal (datahora, cansaco) VALUES (NOW(), :cansaco)';
+        $stmt = Conexao::getConn()->prepare($sql);
+        $stmt->bindValue(':cansaco', $usuarioObj->getCansaco());
+        $resultado = $stmt->execute();
+
+        return $resultado;
+
+    }
+
     
 }
