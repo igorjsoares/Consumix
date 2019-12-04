@@ -45,9 +45,10 @@ var_dump($resultado);
 		$_SESSION['alert_tipo'] = "danger";
 
 		//header('Location: index.php');
-	endif;
+    endif;
+    */
 endif
-*/
+
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0054)https://getbootstrap.com.br/docs/4.1/examples/sign-in/ -->
