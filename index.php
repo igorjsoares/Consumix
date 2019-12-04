@@ -25,8 +25,8 @@ if(isset($_POST['btn-entrar'])):
 
     $resultado = $usuariosDao->logar($usuario);
     
-var_dump($resultado);
-/*
+//var_dump($resultado);
+
 	if($resultado != 0 AND $resultado[0]['status'] == '1'):
 
 		$_SESSION['painellogado'] = true;
@@ -46,7 +46,7 @@ var_dump($resultado);
 
 		//header('Location: index.php');
     endif;
-    */
+    
 endif
 
 ?>
