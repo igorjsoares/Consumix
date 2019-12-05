@@ -27,25 +27,26 @@ if(isset($_POST['btn-entrar'])):
     
 //var_dump($resultado);
 
-	if($resultado != 0 AND $resultado[0]['status'] == '1'):
+	if($resultado != 0 AND $resultado[0]['status'] == '1'){
 
 		$_SESSION['painellogado'] = true;
 		$_SESSION['id_usuario'] = $resultado[0]['id_usuario'];
 		$_SESSION['nome'] = $resultado[0]['nome'];
 		$_SESSION['email'] = $resultado[0]['email'];
 		$_SESSION['perfil'] = $resultado[0]['perfil'];
-		unset($_SESSION['alert_tipo']);
+		unset($_SESSION['alert_text']);
 
 		//header('Location: painel/index.php');
 
-	else:
-		$_SESSION['painellogado'] = false;
-		$_SESSION['alert_menssagem'] = "Não foi possível realizar o login, confira o usuário e senha.";
-		$_SESSION['alert_titulo'] = "OPS!";
-		$_SESSION['alert_tipo'] = "danger";
+    }elseif($resultado != 0 AND $resultado[0]['status'] != '1'){
+		$_SESSION['alert_text'] = "Este usuário está bloqueado. Entre em contato com o administrador do sistema.";
 
-		//header('Location: index.php');
-    endif;
+		header('Location: index.php');
+    }else{
+        $_SESSION['alert_text'] = "Algo errado com o e-mail ou senha.";
+
+		header('Location: index.php');
+    }
     
 endif
 
@@ -63,7 +64,7 @@ include 'head.php';
 
 	<div class="login-box">
 		<div class="login-logo">
-			<a href="../../index2.html"><b>consu</b>MIX v2</a>
+			<a href="../../index2.html"><b>consu</b>MIX</a>
 		</div>
 		<!-- /.login-logo -->
 		<div class="card">
@@ -109,13 +110,13 @@ include 'head.php';
 	</div>
 
 	<?php
-		if(isset($_SESSION['alert_tipo'])):
+		if(isset($_SESSION['alert_text'])):
 			?>
 	<script type="text/javascript">
         
-		console.log('Teste de console.');
+		//console.log('Teste de console.');
         
-        toastr.error('Algo errado com o e-mail ou senha.', 'Ops!!!', {
+        toastr.error(<?=$_SESSION['alert_text']?>, 'Ops!!!', {
             positionClass: "toast-top-center",
             preventDuplicates: true,
             showDuration: "300",
